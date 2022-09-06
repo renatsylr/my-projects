@@ -36,10 +36,10 @@ Resources:
         - Ref: WebServerSecurityGroup
       Tags:
         - Key: Name
-          Value: !Sub: Web Server of ${AWS::StackName} Stack
+          Value: Sub: Web Server of ${AWS::StackName} Stack
       UserData: 
         Fn::Base64:
-          !Sub |
+          Sub: |
             #! /bin/bash
             yum update -y
             yum install httpd -y
