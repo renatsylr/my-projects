@@ -42,7 +42,7 @@ Resources:
             #! /bin/bash
             yum update -y
             yum install httpd -y
-            FOLDER="https://github.com/renatsylr/my-projects/blob/main/aws/projects/Project-101-kittens-carousel-static-website-ec2/static-web"
+            FOLDER="https://raw.githubusercontent.com/renatsylr/my-projects/main/aws/projects/Project-101-kittens-carousel-static-website-ec2/static-web/kittens-carousel-static-website"
             cd /var/www/html
             wget $FOLDER/index.html
             wget $FOLDER/cat0.jpg
