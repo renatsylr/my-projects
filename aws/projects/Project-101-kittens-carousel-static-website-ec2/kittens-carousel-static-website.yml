@@ -12,6 +12,7 @@ Description: |
   then deployed on Apache Web Server.
   
 Resources:
+  
   WebServerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
